@@ -1,4 +1,4 @@
-Meta
+Metas Mobile and Such.
 ========
 
 
@@ -44,3 +44,38 @@ To put it simply, everytime if start a project i am looking for this, a proper p
 	It is safe to assume that today all browsers for Android smartphones 
 	support the viewport meta tag but that there are probably no other specific tags.
  -->
+ 
+Facebook Open Graph Meta Tags
+
+<!-- Facebook Open Graph Meta Tags -->
+	<!-- Share Image -->
+	<meta property="og:image" content="http://www.myimage.com/image.png"/>
+	# Note that the width and height of this thing varies constantly. 
+	# Its currently 200x200
+	
+	<!-- Title -->
+	<meta property="og:title" content="Facebook Open Graph META Tags"/>
+
+	<!-- Site URL -->
+	<meta property="og:url" content="http://mywebsite.com"/>
+
+	<!-- Site Name -->
+	<meta property="og:site_name" content="My Website Name"/>
+
+	<!-- Site Type -->
+	<meta property="og:type" content="blog"/>
+
+	<!-- Other : 
+	 - Visit : https://developers.facebook.com/docs/concepts/opengraph/
+	 For more information. Good luck! Facebook doc is a mess.
+	-->
+
+
+
+
+
+
+
+
+
+
