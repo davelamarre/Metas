@@ -36,6 +36,8 @@ To put it simply, everytime if start a project i am looking for this, a proper p
 		<link rel="apple-touch-startup-image" href="image.jpg" />
 		<!-- iPhone/iPod Touch Portrait – 640 x 920 pixels (high-resolution) -->
 		<link rel="apple-touch-startup-image" sizes="640x920" href="image.jpg" />
+		<!-- iPhone 5/iPod Touch 5 Portrait – 640 x 1096 pixels (high-resolution) -->
+		<link rel="apple-touch-startup-image" sizes="640x1096" href="image.jpg">
 
 <!-- End iOS Meta controls-->
 
