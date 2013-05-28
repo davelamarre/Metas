@@ -4,40 +4,65 @@ Metas Mobile and Such.
 
 #### Repository of all proper meta tags ####
 
-To put it simply, everytime if start a project i am looking for this, a proper package of all facebook and mobile related meta tags. With all the proper width and height. Might aswell push this on github.
+To put it simply, everytime if start a project i am looking for this, a proper package of all facebook and mobile related meta tags, favicons and splash screen resolution (retina or not). With all the proper width and height. If you find any errors in this, please tell me!
 
-<!-- iOs and Android Mobile Meta Images -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<meta name="HandheldFriendly" content="true" />
-<!-- iOS Meta controls-->
+<!-- Make the URL and button bars disappear, -->
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
 
-	<!-- iOS Generic Meta -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<!-- Remove Toolbars and make the Website iOS capable -->
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<!-- Change the App Status Bar colour -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<!-- Scale the viewport accordingly. -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
+<!-- Other options :
+
+width – Width of viewport in pixels. [Default: 980, Range: 200 - 10,000]
+height – Height of viewport in pixels. [Default: calculated with the width and aspect ratio of the device, Range: 223 - 10,000]
+initial-scale – The initial scale of the viewport. [Default: calculated to fit the webpage in the area available, Range: calculated with minimum-scale and maximum-scale properties.]
+minimum-scale – The minimum scale of viewport. [Default: 0.25, Range: >0 - 10]
+maximum-scale – The maximum scale of viewport. [Default: 1.6, Range: >0 - 10]
+user-scalable – Whether the user can zoom in and out. [Default: yes, Options: yes or no]
+ 
+ - This info comes from : http://mobile.tutsplus.com/tutorials/iphone/iphone-web-app-meta-tags/
+-->
+
+
+<!-- Change the status bar style (other content options includes : black / black-translucent / default-->
 	
-	<!-- Application Icon -->
-		<link rel="apple-touch-icon" href="image.jpg"/>
-		<!-- iPod Touch, iPhone and iPad -->
-		<link rel="apple-touch-icon" href="image.jpg" />
-		<!-- iPhone -->
-		<link rel="apple-touch-icon" sizes="114x114" href="image.jpg" />
-		<!-- iPad -->
-		<link rel="apple-touch-icon" sizes="72x72" href="image.jpg" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />  
+
+<!-- FAV ICONS-->
+
+	<link rel="icon" href="/images/icons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/icons/favicon_16px.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/images/icons/favicon_32px.png" sizes="32x32" type="image/png">
+	<link rel="shortcut icon" href="/images/icons/favicon.png">
+
+<!-- BOOKMARK ICONS -->
+
+	<link href="/images/icons/icon_57.png" sizes="57x57" rel="apple-touch-icon">
+	<link href="/images/icons/icon_72.png" sizes="72x72" rel="apple-touch-icon">
+	<link href="/images/icons/icon_114px.png" sizes="114x114" rel="apple-touch-icon">
+	<link href="/images/icons/icon_144px.png" sizes="144x144" rel="apple-touch-icon">
+
+<!-- STARTUP IMAGES LANDSCAPE / PORTRAIT-->
+<!-- This is the generic startup image, it will be used if none of the other start-up images are triggered threw their <media> parameters -->
 	
-	<!-- Splash Screen -->
-		<!-- iPad Landscape – 1024 x 748 -->
-		<link rel="apple-touch-startup-image" sizes="1024x748" href="image.jpg" />
-		<!-- iPad Portrait – 768 x 1004 -->
-		<link rel="apple-touch-startup-image" sizes="768x1004" href="image.jpg" />
-		<!-- iPhone/iPod Touch Portrait – 320 x 460 (standard resolution) -->
-		<link rel="apple-touch-startup-image" href="image.jpg" />
-		<!-- iPhone/iPod Touch Portrait – 640 x 920 pixels (high-resolution) -->
-		<link rel="apple-touch-startup-image" sizes="640x920" href="image.jpg" />
-		<!-- iPhone 5/iPod Touch 5 Portrait – 640 x 1096 pixels (high-resolution) -->
-		<link rel="apple-touch-startup-image" sizes="640x1096" href="image.jpg">
+	<link href="/images/icons/touch-icon-iphone-startup-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+<!-- STARTUP IMAGES LANDSCAPE / PORTRAIT RETINA-->
+	
+	<link href="/images/icons/touch-icon-ipad-startup-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<link href="/images/icons/touch-icon-ipad-startup-1024x748.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+
+	<link href="/images/icons/touch-icon-iphone-retina-startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="/images/icons/touch-icon-iphone-retina-startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+	<link href="/images/icons/touch-icon-ipad-retina-startup-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="/images/icons/touch-icon-ipad-retina-startup-2048x1496.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
 <!-- End iOS Meta controls-->
 
@@ -51,6 +76,7 @@ Facebook Open Graph Meta Tags
 
 <!-- Facebook Open Graph Meta Tags -->
 	<!-- Share Image -->
+
 	<meta property="og:image" content="http://www.myimage.com/image.png"/>
 	# Note that the width and height of this thing varies constantly. 
 	# Its currently 200x200
@@ -72,6 +98,19 @@ Facebook Open Graph Meta Tags
 	 For more information. Good luck! Facebook doc is a mess.
 	-->
 
+<!-- Identifying Mobile Websites 
+*Warning, these are deprecated tags to be used only when  the viewport tag doesnt cut it..
+-->
+
+	<meta name="HandheldFriendly" content="true" />
+<!--
+This will indentify your website as mobile friendly, however its range of supported browsers is unkkown
+-->
+
+	<meta name="MobileOptimized" content="320">
+<!--
+This will indentify your website as mobile friendly, however its range of supported browsers is unkkown
+-->
 
 
 
